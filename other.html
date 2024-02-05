@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/script/script_index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="menu_desplegable"
+      class="no_plegable"
+      onmouseenter="plegar_menu();"
+      onmouseleave="plegar_menu();"
+    >
+      <nav id="menu_nav">
+        <a href="#" class="opcion_menu">A</a>
+        <a href="#" class="opcion_menu">B</a>
+        <a href="#" class="opcion_menu">C</a>
+        <a href="#" class="opcion_menu">D</a>
+        <a href="#" class="opcion_menu">E</a>
+        <a href="#" class="opcion_menu">F</a>
+        <a href="#" class="opcion_menu">G</a>
+      </nav>
+    </div>
+
+    <div class="cuerpo_html">
+      <div id="centro">
+        <div id="cabecera_centro">
+          <div id="cabecera_centro_img">
+            <img src="/imagenes/gooro1.png" alt="" />
+          </div>
+          <div id="cabecera_centro_name">
+            <p>ADIVINA ADIVINADOR</p>
+          </div>
+        </div>
+
+        <div class="centro_centro">
+          <img
+            src="/imagenes/gorro2.png"
+            alt=""
+            srcset=""
+            id="opcion1"
+            onclick="validar_respuesta(0);"
+          />
+          <img
+            src="/imagenes/gorro2.png"
+            alt=""
+            srcset=""
+            id="opcion2"
+            onclick="validar_respuesta(1);"
+          />
+          <img
+            src="/imagenes/gorro2.png"
+            alt=""
+            srcset=""
+            id="opcion3"
+            onclick="validar_respuesta(2);"
+          />
+        </div>
+
+        <div id="centro_footer">
+          <button id="boton_jugar" onclick="iniciar_juego();" class="visible">
+            INICIO
+          </button>
+          <div class="no_visible" id="mensaje_adivina">
+            <p>ADIVINA DONDE QUEDO LA MONEDA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
